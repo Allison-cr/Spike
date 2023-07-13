@@ -16,6 +16,10 @@
 		FECC6AC42A6047EC006D1276 /* SpikeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC6AC32A6047EC006D1276 /* SpikeTests.swift */; };
 		FECC6ACE2A6047EC006D1276 /* SpikeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC6ACD2A6047EC006D1276 /* SpikeUITests.swift */; };
 		FECC6AD02A6047EC006D1276 /* SpikeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC6ACF2A6047EC006D1276 /* SpikeUITestsLaunchTests.swift */; };
+		FECC6ADD2A6048DB006D1276 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC6ADC2A6048DB006D1276 /* ViewModel.swift */; };
+		FECC6ADF2A604B9D006D1276 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC6ADE2A604B9D006D1276 /* Protocols.swift */; };
+		FECC6AE12A604EE5006D1276 /* Password.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC6AE02A604EE5006D1276 /* Password.swift */; };
+		FECC6AE42A606939006D1276 /* Navajo-Swift in Frameworks */ = {isa = PBXBuildFile; productRef = FECC6AE32A606939006D1276 /* Navajo-Swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,9 @@
 		FECC6AC92A6047EC006D1276 /* SpikeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpikeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FECC6ACD2A6047EC006D1276 /* SpikeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpikeUITests.swift; sourceTree = "<group>"; };
 		FECC6ACF2A6047EC006D1276 /* SpikeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpikeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FECC6ADC2A6048DB006D1276 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		FECC6ADE2A604B9D006D1276 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		FECC6AE02A604EE5006D1276 /* Password.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Password.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FECC6AE42A606939006D1276 /* Navajo-Swift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +107,10 @@
 			isa = PBXGroup;
 			children = (
 				FECC6AAD2A6047EB006D1276 /* SpikeApp.swift */,
+				FECC6AE02A604EE5006D1276 /* Password.swift */,
 				FECC6AAF2A6047EB006D1276 /* ContentView.swift */,
+				FECC6ADE2A604B9D006D1276 /* Protocols.swift */,
+				FECC6ADC2A6048DB006D1276 /* ViewModel.swift */,
 				FECC6AB12A6047EC006D1276 /* Assets.xcassets */,
 				FECC6AB62A6047EC006D1276 /* Persistence.swift */,
 				FECC6AB82A6047EC006D1276 /* Spike.xcdatamodeld */,
@@ -149,6 +160,9 @@
 			dependencies = (
 			);
 			name = Spike;
+			packageProductDependencies = (
+				FECC6AE32A606939006D1276 /* Navajo-Swift */,
+			);
 			productName = Spike;
 			productReference = FECC6AAA2A6047EB006D1276 /* Spike.app */;
 			productType = "com.apple.product-type.application";
@@ -221,6 +235,9 @@
 				Base,
 			);
 			mainGroup = FECC6AA12A6047EB006D1276;
+			packageReferences = (
+				FECC6AE22A606939006D1276 /* XCRemoteSwiftPackageReference "Navajo-Swift" */,
+			);
 			productRefGroup = FECC6AAB2A6047EB006D1276 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -263,8 +280,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FECC6ADD2A6048DB006D1276 /* ViewModel.swift in Sources */,
 				FECC6AB72A6047EC006D1276 /* Persistence.swift in Sources */,
 				FECC6AB02A6047EB006D1276 /* ContentView.swift in Sources */,
+				FECC6AE12A604EE5006D1276 /* Password.swift in Sources */,
+				FECC6ADF2A604B9D006D1276 /* Protocols.swift in Sources */,
 				FECC6ABA2A6047EC006D1276 /* Spike.xcdatamodeld in Sources */,
 				FECC6AAE2A6047EB006D1276 /* SpikeApp.swift in Sources */,
 			);
@@ -591,6 +611,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FECC6AE22A606939006D1276 /* XCRemoteSwiftPackageReference "Navajo-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Wistas23/Navajo-Swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FECC6AE32A606939006D1276 /* Navajo-Swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FECC6AE22A606939006D1276 /* XCRemoteSwiftPackageReference "Navajo-Swift" */;
+			productName = "Navajo-Swift";
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		FECC6AB82A6047EC006D1276 /* Spike.xcdatamodeld */ = {
