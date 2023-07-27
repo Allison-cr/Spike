@@ -14,20 +14,47 @@ class UserViewModel: ObservableObject {
   @Published var username = ""
   @Published var password = ""
   @Published var passwordAgain = ""
-  
+ 
   // output
   @Published var usernameMessage = ""
   @Published var passwordMessage = ""
   @Published var isValid = false
+    
+    //@Published private var isValidPassword = false
+    //@Published private var isValidUsername = false
+    //@Published private var isValidPasswordAgain = false
+       
 
   private var cancellableSet: Set<AnyCancellable> = []
   
+//    var UsernamePrompt: String? {
+//            if isValidUsername == true || username.isEmpty {
+//                return nil
+//            } else {
+//                return "Enter valid username"
+//            }
+//        }
+//    var PasswordPrompt: String? {
+//            if isValidPassword == true || password.isEmpty {
+//                return nil
+//            } else {
+//                return "Enter valid password"
+//            }
+//        }
+//    var PasswordAgainPrompt: String? {
+//            if isValidPasswordAgain == true || passwordAgain.isEmpty {
+//                return nil
+//            } else {
+//                return "Enter valid password again"
+//            }
+//        }
+    
   private var isUsernameValidPublisher: AnyPublisher<Bool, Never> {
     $username
       .debounce(for: 0.8, scheduler: RunLoop.main)
       .removeDuplicates()
       .map { input in
-        return input.count >= 3
+        return input.count >= 1
       }
       .eraseToAnyPublisher()
   }
@@ -113,7 +140,7 @@ class UserViewModel: ObservableObject {
     isUsernameValidPublisher
       .receive(on: RunLoop.main)
       .map { valid in
-        valid ? "" : "User name must at least have 3 characters"
+        valid ? "" : ""
       }
       .assign(to: \.usernameMessage, on: self)
       .store(in: &cancellableSet)
@@ -123,7 +150,7 @@ class UserViewModel: ObservableObject {
       .map { passwordCheck in
         switch passwordCheck {
         case .empty:
-          return "Password must not be empty"
+          return  ""
         case .noMatch:
           return "Passwords don't match"
         case .notStrongEnough:

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FEA27FF32A6165450063E164 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA27FF22A6165450063E164 /* CustomTextField.swift */; };
+		FEA27FF52A6165800063E164 /* AnimatedGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA27FF42A6165800063E164 /* AnimatedGradient.swift */; };
+		FEA27FF72A6165B40063E164 /* TextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA27FF62A6165B40063E164 /* TextFieldStyle.swift */; };
 		FECC6AAE2A6047EB006D1276 /* SpikeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC6AAD2A6047EB006D1276 /* SpikeApp.swift */; };
 		FECC6AB02A6047EB006D1276 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC6AAF2A6047EB006D1276 /* ContentView.swift */; };
 		FECC6AB22A6047EC006D1276 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FECC6AB12A6047EC006D1276 /* Assets.xcassets */; };
@@ -18,8 +21,11 @@
 		FECC6AD02A6047EC006D1276 /* SpikeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC6ACF2A6047EC006D1276 /* SpikeUITestsLaunchTests.swift */; };
 		FECC6ADD2A6048DB006D1276 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC6ADC2A6048DB006D1276 /* ViewModel.swift */; };
 		FECC6ADF2A604B9D006D1276 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC6ADE2A604B9D006D1276 /* Protocols.swift */; };
-		FECC6AE12A604EE5006D1276 /* Password.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC6AE02A604EE5006D1276 /* Password.swift */; };
 		FECC6AE42A606939006D1276 /* Navajo-Swift in Frameworks */ = {isa = PBXBuildFile; productRef = FECC6AE32A606939006D1276 /* Navajo-Swift */; };
+		FEDFACE12A72C65500E887F1 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDFACE02A72C65500E887F1 /* Data.swift */; };
+		FEDFACE32A72C67C00E887F1 /* DetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDFACE22A72C67C00E887F1 /* DetailScreen.swift */; };
+		FEDFACE52A72C6A300E887F1 /* SecondScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDFACE42A72C6A300E887F1 /* SecondScreen.swift */; };
+		FEDFACE72A72C72200E887F1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDFACE62A72C72200E887F1 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FEA27FF22A6165450063E164 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		FEA27FF42A6165800063E164 /* AnimatedGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedGradient.swift; sourceTree = "<group>"; };
+		FEA27FF62A6165B40063E164 /* TextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldStyle.swift; sourceTree = "<group>"; };
 		FECC6AAA2A6047EB006D1276 /* Spike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FECC6AAD2A6047EB006D1276 /* SpikeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpikeApp.swift; sourceTree = "<group>"; };
 		FECC6AAF2A6047EB006D1276 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,7 +63,10 @@
 		FECC6ACF2A6047EC006D1276 /* SpikeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpikeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FECC6ADC2A6048DB006D1276 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		FECC6ADE2A604B9D006D1276 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
-		FECC6AE02A604EE5006D1276 /* Password.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Password.swift; sourceTree = "<group>"; };
+		FEDFACE02A72C65500E887F1 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		FEDFACE22A72C67C00E887F1 /* DetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreen.swift; sourceTree = "<group>"; };
+		FEDFACE42A72C6A300E887F1 /* SecondScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreen.swift; sourceTree = "<group>"; };
+		FEDFACE62A72C72200E887F1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +95,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FEA27FF82A6167240063E164 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				FEA27FF22A6165450063E164 /* CustomTextField.swift */,
+				FEA27FF62A6165B40063E164 /* TextFieldStyle.swift */,
+				FEA27FF42A6165800063E164 /* AnimatedGradient.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		FEA27FFD2A62B49A0063E164 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FECC6AAF2A6047EB006D1276 /* ContentView.swift */,
+				FEDFACE62A72C72200E887F1 /* HomeView.swift */,
+				FEDFACE22A72C67C00E887F1 /* DetailScreen.swift */,
+				FEDFACE42A72C6A300E887F1 /* SecondScreen.swift */,
+				FECC6ADC2A6048DB006D1276 /* ViewModel.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FEA27FFE2A62B4B60063E164 /* Password_protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FECC6ADE2A604B9D006D1276 /* Protocols.swift */,
+			);
+			path = Password_protocols;
+			sourceTree = "<group>";
+		};
+		FEA27FFF2A62B4CA0063E164 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FEDFACE02A72C65500E887F1 /* Data.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		FECC6AA12A6047EB006D1276 = {
 			isa = PBXGroup;
 			children = (
@@ -107,10 +157,10 @@
 			isa = PBXGroup;
 			children = (
 				FECC6AAD2A6047EB006D1276 /* SpikeApp.swift */,
-				FECC6AE02A604EE5006D1276 /* Password.swift */,
-				FECC6AAF2A6047EB006D1276 /* ContentView.swift */,
-				FECC6ADE2A604B9D006D1276 /* Protocols.swift */,
-				FECC6ADC2A6048DB006D1276 /* ViewModel.swift */,
+				FEA27FFD2A62B49A0063E164 /* View */,
+				FEA27FFF2A62B4CA0063E164 /* Data */,
+				FEA27FF82A6167240063E164 /* Styles */,
+				FEA27FFE2A62B4B60063E164 /* Password_protocols */,
 				FECC6AB12A6047EC006D1276 /* Assets.xcassets */,
 				FECC6AB62A6047EC006D1276 /* Persistence.swift */,
 				FECC6AB82A6047EC006D1276 /* Spike.xcdatamodeld */,
@@ -281,11 +331,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				FECC6ADD2A6048DB006D1276 /* ViewModel.swift in Sources */,
+				FEDFACE12A72C65500E887F1 /* Data.swift in Sources */,
+				FEDFACE72A72C72200E887F1 /* HomeView.swift in Sources */,
 				FECC6AB72A6047EC006D1276 /* Persistence.swift in Sources */,
 				FECC6AB02A6047EB006D1276 /* ContentView.swift in Sources */,
-				FECC6AE12A604EE5006D1276 /* Password.swift in Sources */,
+				FEA27FF72A6165B40063E164 /* TextFieldStyle.swift in Sources */,
+				FEDFACE52A72C6A300E887F1 /* SecondScreen.swift in Sources */,
+				FEA27FF52A6165800063E164 /* AnimatedGradient.swift in Sources */,
+				FEA27FF32A6165450063E164 /* CustomTextField.swift in Sources */,
 				FECC6ADF2A604B9D006D1276 /* Protocols.swift in Sources */,
 				FECC6ABA2A6047EC006D1276 /* Spike.xcdatamodeld in Sources */,
+				FEDFACE32A72C67C00E887F1 /* DetailScreen.swift in Sources */,
 				FECC6AAE2A6047EB006D1276 /* SpikeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,6 +509,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -482,6 +539,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
